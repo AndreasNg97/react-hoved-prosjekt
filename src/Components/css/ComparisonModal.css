@@ -1,0 +1,141 @@
+.comparisonContainer{
+    width: 75vw;
+    height: auto;
+    margin: 0;
+    display: flex;
+    padding: 0;
+}
+
+.fighterBox{
+    position: sticky;
+    top: 0;
+    align-items: center;
+    width: 30%;
+    height: 1000px;
+    padding: 2rem;
+}
+
+.blueFighterBox {
+    justify-content: flex-end;
+}
+
+.redFighterBox{
+    justify-content: flex-start;
+}
+.img3Container{
+    width: 90%;
+    height: 80%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.comparisonSectionBox{
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+.sectionTitle{
+    margin: 0 0 1rem 0;
+    width:100%;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+    min-width: 362px;
+}
+
+.statBox{
+    padding: 5rem 0 0 0 ;
+    height: 100%;
+    width: 40%;
+}
+
+.statBoxDiv{
+    display: grid;
+    grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr);
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.cornerStats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.redCornerStats{
+    align-items: flex-end;
+}
+
+.blueCornerStats{
+    align-items: flex-start;
+}  
+
+.centerOfAll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.centerOfAll p {
+    font-weight: 600;
+}
+
+.statBoxChart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    width: 100%;
+    min-width: 354px;
+}
+
+.chartTitle{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.smallScreenName{
+    display: none;
+}
+
+@media only screen and (max-width:1204px){
+    .comparisonContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fighterBox{
+        display: none;
+    }
+    .smallScreenName{
+        display: grid;
+    }
+}
+
+@media only screen and (max-width: 924px){
+    .comparisonContainer{
+        width: 100vw;;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .comparisonContainer{
+        justify-content: start;
+        padding-left: 4rem;
+    }
+}
+@media only screen and (max-width: 415px){
+    .comparisonContainer{
+        justify-content: start;
+        padding-left: 2rem;
+    }
+}

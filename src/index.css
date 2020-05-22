@@ -1,5 +1,11 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  padding: 0 20rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +13,104 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media only screen and (max-width: 1024px){
+    body{
+      width: 100vw;
+      padding: 0 5rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    body{
+      width: 100vw;
+      padding: 0 1rem;
+    }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.gray-border-bottom{
+  border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.opacityNull{
+  opacity: 0;
+}
+
+.darkmodeText{
+  color: rgb(201, 201, 201);
+}
+
+.darkColor1{
+  background-color: #1c1f24;
+}
+
+.flow-reverse{
+  flex-flow: row-reverse;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.halfPieContainer{
+  display: flex;
+
+  justify-content: center;
+  width: 100%;
+}
+
+.halfOfPie{
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+
+.redHalf{
+
+}
+
+.blueHalf{
+
+}
+
+.sideOfBody{
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.8fr;
+}
+
+.sideOfBody div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.byTargetSectionBox{
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 0.3fr;
+}
+
+.comparisonLine{
+  height: 2px;
+  width: 100px;
+  background-color: beige;
+}
+
+.lightmodeHover:hover{
+  background-color: rgb(197, 196, 196);
+  border-radius: 5px;
+}
+
+.darkmodeHover:hover{
+  background-color: #353946;
+  border-radius: 5px;
 }

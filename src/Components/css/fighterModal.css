@@ -1,0 +1,52 @@
+.modalCompMain {
+    margin: 0;
+    padding: 0.5rem 2rem;
+    width: 100%;
+}
+
+
+.container{
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 924px){
+    .container{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 415px){
+
+    .container{
+        transform: scale(0.9);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .imgContainer img{
+        width: 300px;
+        margin-top: 2rem;
+    }
+    .infoContainer{
+        width: 400px;
+        padding: 0;
+        margin: 1rem 0 0 0 ;
+    }
+    .chartContainer{
+        width: 200px;
+        height: 200px;
+    }
+
+    .fighterNameContainer{
+        margin-top: 3.5rem;
+    }
+
+    .byTargetContainer{
+        margin-right: 2rem;
+        padding-right: 1rem;
+    }
+
+}
+
+
