@@ -8,6 +8,7 @@ const WinByComparisonChart = (props) => {
     const options = {
         responsive: true,
         legend: {display: false},
+        plugins: { datalabels: { display: false }},
         scales: {
             yAxes: [{
                 ticks: {

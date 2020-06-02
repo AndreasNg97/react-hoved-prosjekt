@@ -22,6 +22,7 @@ const StrikeByPosition = (props) => {
         responsive: true,
         legend: { display: false },
         labels: { display: false },
+        plugins: { datalabels: { display: false }},
         events: ['null'],
         scales: {
             yAxes: [{

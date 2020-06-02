@@ -21,6 +21,7 @@ const TakedownAccuracy = (props) => {
         events: ['null'],
         labels: { display: false },
         legend: { display: false },
+        plugins: { datalabels: { display: false }},
         scales: {
             yAxes: [{
                     ticks: {display: false},

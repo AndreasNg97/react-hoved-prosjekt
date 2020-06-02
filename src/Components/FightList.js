@@ -12,7 +12,7 @@ const FightList = () => {
 
             <div className='fightListSection main'>
                 <div style={{width:'100%', minWidth:'745px'}}>
-                    <h1 style={{textAlign:'center'}}>MAIN CARD</h1>
+                    <h1 style={{textAlign:'center', margin:'4rem 0 1rem 0'}}>MAIN CARD</h1>
                 </div>
                 {mainfights.map( fight =>
                     <FighterContainer2
@@ -23,7 +23,7 @@ const FightList = () => {
 
             <div className='fightListSection prelims'>
                 <div style={{width:'100%', minWidth:'745px'}}>
-                    <h1 style={{textAlign:'center'}}> PRELIMS</h1>
+                    <h1 style={{textAlign:'center', margin:'4rem 0 1rem 0'}}> PRELIMS</h1>
                 </div>
                 {prelimfights.map( fight =>
                     <FighterContainer2
@@ -34,7 +34,7 @@ const FightList = () => {
 
             <div className='fightListSection earlyprelims'>
                 <div style={{width:'100%', minWidth:'745px'}}>
-                    <h1 style={{textAlign:'center'}}>EARLY PRELIMS</h1>
+                    <h1 style={{textAlign:'center', margin:'4rem 0 1rem 0'}}>EARLY PRELIMS</h1>
                 </div>
                 {earlyprelimfights.map( fight =>
                     <FighterContainer2

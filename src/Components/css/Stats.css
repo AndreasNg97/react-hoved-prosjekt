@@ -1,0 +1,7 @@
+.mainStatsDiv{
+    flex-wrap: wrap;
+    border: 1px solid white;
+    width: 105%;
+    height: auto;
+    justify-content: space-evenly;
+}

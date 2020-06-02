@@ -1,9 +1,6 @@
 import React, { useRef, useEffect, useState, useContext } from 'react'
 import { addMargin, shrinkMargin } from '../../utils/Animations'
 import '../css/SocialMedia.css'
-import iglogoBlack from '../../img/iglogoBlack.png'
-import fblogoBlack from '../../img/fblogoBlack.png'
-import twlogoBlack from '../../img/twlogoBlack.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { darkmodeContext } from '../../utils/Context'
 

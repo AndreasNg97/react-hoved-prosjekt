@@ -19,6 +19,7 @@ const WinByWay = (props) => {
         legend: { display: false },
         labels: { display: false },
         events: ['null'],
+        plugins: { datalabels: { display: false }},
         scales: {
             yAxes: [{
                 ticks: {

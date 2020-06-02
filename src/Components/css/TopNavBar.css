@@ -1,0 +1,98 @@
+.Navbar{
+    width: 100%;
+    min-width: 745px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.navbarLeft{
+    display: flex;
+}
+
+.navbarRight{
+    display: flex;
+    align-items: flex-end;
+    margin: 0.2rem;
+}
+
+.switchContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch{
+    margin: 0.2rem;
+}
+
+.switchIconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.switchContainer p {
+    margin: 0;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    font-weight: 600;
+    color: orange;
+}
+
+.popupSettings{
+    display: none;
+    position: absolute;
+    top: 4.9%;
+    right: 19%;
+    margin: 0;
+    border: 1px solid white;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 1.3rem 0.4rem;
+    background-color: rgb(17, 17, 19);
+}
+.userMenu{
+    display: none;
+    position: absolute;
+    top: 4.9%;
+    right: 19%;
+    margin: 0;
+    border: 1px solid white;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 1.3rem 0.5rem;
+    background-color: rgb(17, 17, 19);
+}
+
+.btnP{
+    font-size: 0.8rem;
+}
+
+.profilePicture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 0.3rem;
+    transition: 0.8s;
+}
+
+ul{
+    list-style-type: none;
+    width: 100%;
+}
+
+ul div{
+    margin: 0.5rem 0;
+}
+ul li {
+    text-align: start;
+}
+
+ul div:hover{
+    background-color: #999;
+}

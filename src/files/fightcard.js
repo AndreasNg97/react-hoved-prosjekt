@@ -281,7 +281,7 @@ const fightcard = {
                 "img4": "",
                 "avg_fight_time": "06:05",
                 "record": {
-                    "current_win_streak": "",
+                    "current_win_streak": 3,
                     "wins": 14,
                     "losses": 3,
                     "draws": 0,

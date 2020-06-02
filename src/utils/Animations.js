@@ -52,3 +52,11 @@ export const shrinkMargin = (item1, item2, item3) => {
         marginTop:0
     })
 }
+
+export const cogAni = (item1, rotate, scale) =>{
+    gsap.to(item1,{
+        duration:0.5,
+        rotation:rotate,
+        scale:scale,
+    })
+}
