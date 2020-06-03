@@ -67,8 +67,26 @@
     width: 100%;
 }
 
+.comparisonNameRedContainer{
+    align-items: center;
+    border-bottom: 2px solid red;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;    
+}
+.comparisonNameBlueContainer{
+    align-items: center;
+    border-bottom: 2px solid blue;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;    
+}
+
+.comparisonName{
+    text-align: center;
+    width: 150%;
+}
+
 .redCornerStats{
-    align-items: flex-end;
+    align-items: flex-end;;
 }
 
 .blueCornerStats{

@@ -20,6 +20,7 @@ const SocialMedia = (props) => {
 
     const {dark} = useContext(darkmodeContext)
 
+    // Doesnt render socialmedia platforms that the fighter doesnt have
     const removeSocial = () => {
         if (socialMedia.instagram === '') logo1.current.style.display = 'none'
         if (socialMedia.twitter === '') logo2.current.style.display = 'none'

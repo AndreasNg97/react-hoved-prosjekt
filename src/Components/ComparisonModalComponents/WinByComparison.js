@@ -5,6 +5,7 @@ const WinByComparison = (props) => {
     const redRecord = props.redRecord
     const blueRecord = props.blueRecord
 
+    //Getting finish rate stats
     const redSubRate = Math.floor(redRecord.sub / redRecord.wins * 100)
     const redKoRate = Math.floor(redRecord.ko / redRecord.wins * 100)
     const blueSubRate = Math.floor(blueRecord.sub / blueRecord.wins * 100)

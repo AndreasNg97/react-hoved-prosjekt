@@ -1,0 +1,37 @@
+.favoriteFighterBox{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.card{
+    transition: 0.8s;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+.namerankContainerCard{
+    display: flex;   
+    border: 1px solid #999;
+    border-radius: 5px 0 5px 0;
+}
+
+.rankContainerCard{
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    border-right: 1px solid #999;
+    display: flex;
+}
+
+.rankContainerCard p, h4{
+    margin: 0 0.1rem;
+    text-transform: uppercase;
+}
+
+.nameContainerCard{
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.2rem;
+}

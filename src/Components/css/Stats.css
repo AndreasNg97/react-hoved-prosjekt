@@ -5,3 +5,25 @@
     height: auto;
     justify-content: space-evenly;
 }
+
+.dataBtn{
+    user-select: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    border-bottom: 1px solid #333;
+}
+
+.dataBtnPressed{
+    user-select: none;
+    cursor: 'pointer';
+    padding: 0.5rem;
+    margin: 0.2rem;
+    color: red;
+    border-bottom: 1px solid #999;
+}
+
+.btnContainer{
+    justify-content: flex-start;
+    align-items: flex-start;
+}

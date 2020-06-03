@@ -1,7 +1,9 @@
 .Navbar{
     width: 100%;
     min-width: 745px;
-    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
@@ -49,23 +51,26 @@
     top: 4.9%;
     right: 19%;
     margin: 0;
-    border: 1px solid white;
     border-top: none;
     border-radius: 0 0 5px 5px;
     padding: 1.3rem 0.4rem;
-    background-color: rgb(17, 17, 19);
 }
+
 .userMenu{
+    user-select: none;
     display: none;
     position: absolute;
     top: 4.9%;
     right: 19%;
     margin: 0;
-    border: 1px solid white;
     border-top: none;
     border-radius: 0 0 5px 5px;
     padding: 1.3rem 0.5rem;
-    background-color: rgb(17, 17, 19);
+}
+
+.navbarBtn{
+    margin: 0 0.1rem;
+    cursor: pointer;
 }
 
 .btnP{
@@ -89,6 +94,7 @@ ul{
 ul div{
     margin: 0.5rem 0;
 }
+
 ul li {
     text-align: start;
 }

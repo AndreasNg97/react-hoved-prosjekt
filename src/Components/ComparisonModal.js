@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './css/ComparisonModal.css'
-import { useOnScreen } from '../utils/functions'
-import { modalReveal } from '../utils/Animations'
+import { rightToLeftReveal, leftToRightReveal } from '../utils/Animations'
 import NameAndInfo from './ComparisonModalComponents/NameAndInfo'
 import WinByComparison from './ComparisonModalComponents/WinByComparison'
 import StrikesComparison from './ComparisonModalComponents/StrikesComparison'
@@ -11,14 +10,20 @@ import GrapplingComparison from './ComparisonModalComponents/GrapplingComparison
 const ComparisonModal = (props) => {
     const redFighter = props.redFighter
     const blueFighter = props.blueFighter
+    let redBox = useRef(null)
+    let blueBox = useRef(null)
 
+    useEffect(() => {
+        leftToRightReveal(redBox, 50, 1)
+        rightToLeftReveal(blueBox, 50, 1)
+    })
 
     return(
         <div className='comparisonContainer'>
-            <div className='fighterBox redFighterBox' >
-                <div className='cornerStats redCornerStats' style={{alignItems:'center', borderBottom:'2px solid red', paddingBottom:'0.5rem', marginBottom:'1rem'}}>
-                    <p style={{fontSize:'1.5rem', textAlign:'center', width:'150%' }}>{redFighter.name} {redFighter.surname}</p>
-                    <p style={{alignItems:'flex-end', textAlign:'center', width:'150%' }}>"{redFighter.nickname}"</p>
+            <div ref={e => {redBox = e}} className='fighterBox redFighterBox opacityNull' >
+                <div className='cornerStats comparisonNameRedContainer'>
+                    <p className='comparisonName' style={{fontSize:'1.5rem'}}>{redFighter.name} {redFighter.surname}</p>
+                    <p className='comparisonName' >"{redFighter.nickname}"</p>
                 </div>   
                 <div className='img3Container' style={{backgroundImage:`url(${redFighter.img3})`}}></div>
             </div>
@@ -45,10 +50,10 @@ const ComparisonModal = (props) => {
                     blueGrappling={blueFighter.grappling}/>
 
             </div>
-            <div className='fighterBox blueFighterBox'>
-                <div className='cornerStats blueCornerStats' style={{alignItems:'center', borderBottom:'2px solid blue', paddingBottom:'0.5rem', marginBottom:'1rem'}}>
-                    <p style={{fontSize:'1.5rem', textAlign:'center', width:'150%'}}>{blueFighter.name} {blueFighter.surname}</p>
-                    <p style={{alignItems:'flex-end', textAlign:'center', width:'150%'}}>"{blueFighter.nickname}"</p>
+            <div ref={e => {blueBox = e}} className='fighterBox blueFighterBox opacityNull'>
+                <div className='cornerStats comparisonNameBlueContainer'>
+                    <p className='comparisonName' style={{fontSize:'1.5rem'}}>{blueFighter.name} {blueFighter.surname}</p>
+                    <p className='comparisonName'>"{blueFighter.nickname}"</p>
                 </div>  
                 <div className='img3Container' style={{backgroundImage:`url(${blueFighter.img3})`}}></div>
             </div>

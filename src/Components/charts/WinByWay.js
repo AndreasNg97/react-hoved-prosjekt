@@ -4,16 +4,22 @@ import { useOnScreen, ChartColor } from '../../utils/functions'
 import { modalReveal } from '../../utils/Animations'
 
 const WinByWay = (props) => {
+    // intersection observer
     const [setRef, visible] = useOnScreen({ threshold: 0.7 })
+
     const [chartData, setChartData] = useState({})
     const total = props.wins
+    //Getting precentages
     const koPrecentage = props.ko / total * 100
     const subPrecentage = props.sub / total * 100
     const decPrecentage = props.dec / total * 100
+    //Util import
     const [color] = ChartColor()
+    //Refs to to animated
     let h1ref = useRef(null)
     let h3Container = useRef(null)
 
+    //Chart options
     const options = {
         responsive: true,
         legend: { display: false },
@@ -33,7 +39,7 @@ const WinByWay = (props) => {
             }]
         }
     }
-
+    //Renders chart if visible
     const chart = () => {
         if (visible) {
             modalReveal(h1ref, h3Container)
@@ -51,7 +57,7 @@ const WinByWay = (props) => {
             })
         }
     }
-
+    //Runs one time
     useEffect(() => {
         chart()
     }, [visible])

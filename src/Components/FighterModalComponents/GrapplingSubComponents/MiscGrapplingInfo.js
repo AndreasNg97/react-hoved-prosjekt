@@ -3,6 +3,7 @@ import { useOnScreen } from '../../../utils/functions'
 import { modalReveal } from '../../../utils/Animations'
 
 const MiscGrapplingInfo = (props) => {
+    //Intersection Observer
     const [setRef, visible] = useOnScreen({ threshold: 0.7 })
     let div1 = useRef(null)
     let div2 = useRef(null)

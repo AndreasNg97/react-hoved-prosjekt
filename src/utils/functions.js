@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useContext } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { darkmodeContext } from './Context'
-import { Pie, Doughnut } from 'react-chartjs-2'
 
-
+//CHECKS IF AN ELEMENT IS VISIBLE OR NOT(INTERSECTIONOBSERVER)
 export const useOnScreen = options => {
     const [ref, setRef] = useState(null)
     const [visible, setVisible] = useState(false)
@@ -25,6 +24,7 @@ export const useOnScreen = options => {
     return [setRef, visible]
 }
 
+//CHANGES COLOR ON CHARTS, COLOR DIFFERS WETHER PAGE IS IN DARKMODE OR NOT
 export const ChartColor = () => {
     const { dark } = useContext(darkmodeContext)
     let color
@@ -39,7 +39,7 @@ export const ChartColor = () => {
     return [color, color2]
 }
 
-
+// SAVES DARKMODE & CM SETTINGS IN LOCAL STORAGE
 export const useLocalState = (localItem) => {
     const [loc, setState] = useState(localStorage.getItem(localItem))
 
@@ -49,4 +49,12 @@ export const useLocalState = (localItem) => {
     }
 
     return [loc, setLoc]
+}
+
+// CHANGES COLOR ON TEXT IN NAVBAR, COLOR DIFFERS WETHER PAGE IS IN DARKMODE OR NOT
+export const NavColors = () => {
+    const {dark} = useContext(darkmodeContext)
+    let navColor
+    dark ? navColor = "white" : navColor = 'black'
+    return [navColor]
 }

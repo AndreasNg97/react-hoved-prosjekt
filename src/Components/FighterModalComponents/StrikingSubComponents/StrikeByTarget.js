@@ -4,11 +4,13 @@ import { useOnScreen } from '../../../utils/functions'
 import bodypng from '../../../img/body.png'
 
 const StrikeByTarget = (props) => {
+    //Intersection Observer
     const [setRef, visible] = useOnScreen({ threshold: 0.6 })
+    //Getting precentages
     const headStrikesPrecentage = props.headStrikes / props.totalLanded * 100
     const bodyStrikesPrecentage = props.bodyStrikes / props.totalLanded * 100
     const legStrikesPrecentage = props.legStrikes / props.totalLanded * 100
-    
+    // lines to be animated
     let lineToHead = useRef(null)
     let lineToBody = useRef(null)
     let lineToLeg = useRef(null)

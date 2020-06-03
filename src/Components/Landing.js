@@ -2,13 +2,11 @@ import React, { useRef, useContext, useEffect } from 'react'
 import "./css/Landing.css"
 import { landingContext } from '../utils/Context'
 const Landing = () => {
-
+    // useRefs
     const landingRef = useRef()
     const btnRef = useRef()
+    // utils import
     const {landing, setLanding} = useContext(landingContext)
-
-
-
 
     useEffect(() => {
         if(landing){

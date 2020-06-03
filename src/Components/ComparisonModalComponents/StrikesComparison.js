@@ -1,18 +1,15 @@
 import React from 'react'
-import HalfPieChart from '../charts/HalfPieChart'
 
 const StrikesComparison = (props) => {
     const redStriking = props.redStriking
     const blueStriking = props.blueStriking
+    //Getting Striking accuracy 
     const redAccuracy = Math.floor( redStriking.sig_strike_landed / redStriking.sig_strike_attempted * 100 )
     const blueAccuracy = Math.floor( blueStriking.sig_strike_landed / blueStriking.sig_strike_attempted * 100 )
 
     return(
         <div className='comparisonSectionBox'>
             <p className='sectionTitle'>STRIKING</p>
-
-
-
             <div className='statBoxDiv'>
                 <div className='cornerStats redCornerStats'>
                     <p>{redAccuracy}%</p>

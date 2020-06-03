@@ -12,11 +12,12 @@ import SocialMedia from './FighterModalComponents/SocialMedia'
 
 const FighterModal = (props) => {
     const [setRef, visible] = useOnScreen({ threshold: 1 })
-    const fighter = props.fighter
-    const record = fighter.record
     let socialMediaBox = useRef(null)
 
+    const fighter = props.fighter
+    const record = fighter.record
 
+    // Reveal socialmedias if setRef is visible
     const socialReveal = () => {
         if (visible) {
             leftToRightReveal(socialMediaBox, 50, 1)
@@ -39,7 +40,8 @@ const FighterModal = (props) => {
                 record={record} />
 
             <div ref={e => { socialMediaBox = e }} className='socialMediaContainer opacityNull '>
-                <SocialMedia socialMedia={fighter.socialmedia} />
+                <SocialMedia 
+                    socialMedia={fighter.socialmedia} />
             </div>
 
             <GeneralInfo fighter={fighter} />

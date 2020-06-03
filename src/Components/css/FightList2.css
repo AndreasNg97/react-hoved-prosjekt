@@ -17,6 +17,7 @@
     width: 40%;
     cursor: pointer;
 }
+
 .blueCorner{
     display: flex;
     width: 40%;
@@ -53,6 +54,7 @@ h3{
 .vsLine2red{
     margin-right: 0.5rem;
 }
+
 .vsLine2blue{
     margin-left: 0.5rem;
 }
@@ -101,7 +103,27 @@ h3{
 .redCorner:hover .nameContainer2{
     text-decoration: underline;
 }
+
 .blueCorner:hover .nameContainer2{
     text-decoration: underline;
 }
 
+.redHeart{
+    margin: 0.5rem;
+    opacity: 0;
+}
+
+.redHeartFilled{
+    margin: 0.5rem;
+    opacity: 1;
+}
+
+.blueHeart{
+    margin: 0.5rem;
+    opacity: 0;
+}
+
+.blueHeartFilled{
+    margin: 0.5rem;
+    opacity: 1;
+}

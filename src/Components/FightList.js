@@ -3,13 +3,14 @@ import fightcard from '../files/fightcard.js'
 import FighterContainer2 from './FighterContainer2.js'
 import './css/FightList2.css'
 
+// Component mapping all the fighters from earlyprelims, prelims and main into one page.
 const FightList = () => {
     const mainfights = fightcard.main
     const prelimfights = fightcard.prelims
     const earlyprelimfights = fightcard.earlyprelims
+    
     return(
         <div className='fightListMain2'>
-
             <div className='fightListSection main'>
                 <div style={{width:'100%', minWidth:'745px'}}>
                     <h1 style={{textAlign:'center', margin:'4rem 0 1rem 0'}}>MAIN CARD</h1>

@@ -6,11 +6,13 @@ import lightLogo from '../img/light.png'
 import { darkmodeContext, metricContext } from '../utils/Context'
 
 const Switches = () => {
-    const [saveDarkmode, setSaveDarkmode] = useLocalState('darkmode')
+    // UTILS IMPORTS
     const { dark, setDark } = useContext(darkmodeContext)
     const { metric, setMetric } = useContext(metricContext)
+    const [saveDarkmode, setSaveDarkmode] = useLocalState('darkmode')
     const [saveMetric, setSaveMetric] = useLocalState('metric')
 
+    //FUNCTION THAT APPLY SAVED SETTINGS IF THERE IS SETTINGS THAT IS SAVED IN LOCAL STORAGE
     const applySavedSettings = () => {
         if (saveDarkmode === 'true') setDark(true)
         if (saveDarkmode === 'false') setDark(false)
@@ -27,6 +29,7 @@ const Switches = () => {
                 <div className='switchContainer'>
                     <Switch
                         id='normal-switch'
+                        //ON CHANGE DARK IS CHANGED TO !DARK, AND DARKMODE/LIGHTMODE SETTING IS SAVED IN LOCAL STORAGE
                         onChange={() => {
                             setDark(!dark)
                             setSaveDarkmode(!dark)
@@ -46,6 +49,7 @@ const Switches = () => {
                             </div>} />
                     <Switch
                         id='normal-switch'
+                        //ON CHANGE METRIC IS CHANGED TO !METRIC, AND CM/IN SETTING IS SAVEN IN LOCAL STORAGE
                         onChange={() => {
                             setMetric(!metric)
                             setSaveMetric(!metric)

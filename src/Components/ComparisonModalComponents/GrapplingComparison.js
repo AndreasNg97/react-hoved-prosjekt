@@ -1,9 +1,9 @@
 import React from 'react'
-import HalfPieChart from '../charts/HalfPieChart'
 
 const GrapplingComparison = (props) => {
     const redGrappling = props.redGrappling
     const blueGrappling = props.blueGrappling
+    // getting Takedown accuracy
     let redTdAccuracy = Math.floor(redGrappling.takedown_landed / redGrappling.takedown_attempted * 100)
     let blueTdAccuracy = Math.floor(blueGrappling.takedown_landed / blueGrappling.takedown_attempted * 100)
     if(isNaN(redTdAccuracy)){

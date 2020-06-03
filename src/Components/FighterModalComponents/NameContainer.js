@@ -3,7 +3,6 @@ import { useOnScreen } from '../../utils/functions'
 
 const NameContainer = props => {
     const [setRef, visible] = useOnScreen({ threshold: 0.7 })
-    let [nameVis, setNameVis] = useState()
     const record = props.record
     const refRank = useRef()
 

@@ -1,15 +1,14 @@
 import React from 'react'
-import body from '../../img/body.png'
 
 
 const StrikesByTargetComparison = (props) => {
 
     const redStriking = props.redStriking
     const blueStriking = props.blueStriking
+    //Getting misc. precentages
     const redHeadPrencentage = Math.floor(props.redStriking.sig_strike_head / props.redStriking.sig_strike_landed * 100)
     const redBodyPrencentage = Math.floor(props.redStriking.sig_strike_body / props.redStriking.sig_strike_landed * 100)
     const redLegPrencentage = Math.floor(props.redStriking.sig_strike_leg / props.redStriking.sig_strike_landed * 100)
-
     const blueHeadPrencentage = Math.floor(props.blueStriking.sig_strike_head / props.blueStriking.sig_strike_landed * 100)
     const blueBodyPrencentage = Math.floor(props.blueStriking.sig_strike_body / props.blueStriking.sig_strike_landed * 100)
     const blueLegPrencentage = Math.floor(props.blueStriking.sig_strike_leg / props.blueStriking.sig_strike_landed * 100)
