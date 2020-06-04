@@ -66,6 +66,12 @@ code {
   flex-flow: row-reverse;
 }
 
+.flex-start{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 .flex-center{
   display: flex;
   justify-content: center;
@@ -102,7 +108,7 @@ code {
 }
 
 .lightmodeHover:hover{
-  background-color: rgb(197, 196, 196);
+  background-color: rgb(200, 200, 200);
   border-radius: 5px;
 }
 

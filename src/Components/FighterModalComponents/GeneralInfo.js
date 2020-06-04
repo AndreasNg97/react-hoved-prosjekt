@@ -37,13 +37,14 @@ const GeneralInfo = (props) => {
         <div className='generalInfo container'>
             <div className='imgContainer'>
                 <img
-                    className='opacityNull' 
+                    className='opacityNull'
                     ref={e => {fighterImg = e}} 
-                    src={fighter.img2} />
+                    src={fighter.img2} 
+                    alt={fighter.name + fighter.surname}/>
             </div>
             <div ref={e => {infoContainer = e}} className="infoContainer opacityNull">
                 <div className="infoSection1">
-                    <p>Country<h2>{fighter.country} <img src={fighterFlag} /></h2></p>
+                    <p>Country<h2>{fighter.country} <img src={fighterFlag} alt={fighter.country + ' flag'}/></h2></p>
                     <p>Hometown<h2>{fighter.hometown}</h2></p>
                     <p>Age<h2>{fighter.age}</h2></p>
                 </div>

@@ -20,8 +20,8 @@ const MiscStrikingInfo = (props) => {
     return (
         <div ref={setRef}>
             <div ref={e => {div1 = e}} className='strikingMiscInfoGrid opacityNull'>
-                <div><p> Strikes Landed pr. min<h2> {props.strikesLandedPerMin}</h2></p></div>
-                <div><p> Strikes absorbed pr. min<h2> {props.strikesAbsorbedPerMin}</h2></p></div>
+                <div style={{width:'80%'}}><p> Strikes Landed pr. min<h2> {props.strikesLandedPerMin}</h2></p></div>
+                <div style={{width:'80%'}}><p> Strikes absorbed pr. min<h2> {props.strikesAbsorbedPerMin}</h2></p></div>
             </div>
             <div ref={e => {div2 = e}} className='opacityNull'>
                 <p className='text-centered'>Knockdown Ratio<h2 className='text-centered'>{props.knockdownRatio}</h2></p>

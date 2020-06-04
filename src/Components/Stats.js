@@ -3,6 +3,7 @@ import { ChartColor } from '../utils/functions'
 import { HorizontalBar } from 'react-chartjs-2'
 import { metricContext } from '../utils/Context'
 import fightcard from '../files/fightcard'
+import FighterCard from '../Components/FighterCard'
 import './css/Stats.css'
 
 const Stats = () => {
@@ -145,17 +146,17 @@ const Stats = () => {
             <div style={{ width: '100%' }}>
                 <HorizontalBar data={chartData} options={options} />
             </div>
-            {fighterList.map((fighter, i) => {
-                return (
-                    <div key={i}>
-                        <img src={fighter.img1} style={{ width: '50%' }} alt={'portrait of ' + fighter.name} />
-                        <p>{fighter.name} {fighter.surname}</p>
-                    </div>
-                )
-            })}
+            <div className='flex-center favoriteFighterBox'>
+                {fighters.map(fighter =>
+                <div style={{width:'25%'}}>
+                    <FighterCard
+                        fighter={fighter}
+                        key={fighter.fighterId} />
+                </div>
+                )}
+            </div>
 
         </div>
     )
 }
-
 export default Stats

@@ -26,9 +26,9 @@ const App = () => {
     document.body.style.backgroundColor = '#ffffff'
   }
 
-if(user || user === null)
+if(user || user === null){
   return (
-      <div className={dark ? 'App darkmodeText' : 'App'} /* onClick={() => globalDropdown()} */>
+      <div className={dark ? 'App darkmodeText' : 'App'}>
         <darkmodeContext.Provider value={{ dark, setDark }}>
           <metricContext.Provider value={{ metric, setMetric }}>
             <landingContext.Provider value={{ landing, setLanding }}>
@@ -43,7 +43,7 @@ if(user || user === null)
           </metricContext.Provider>
         </darkmodeContext.Provider>
       </div>
-  )
+  )}
   if(loading || error)
   return(
     <div style={{width:'100vw', height:'100vh'}} className='flex-center'>

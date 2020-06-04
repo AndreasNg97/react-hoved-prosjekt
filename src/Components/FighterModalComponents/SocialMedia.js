@@ -44,7 +44,7 @@ const SocialMedia = (props) => {
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}>
             <div ref={e => { logoContainer1 = e }} className='logoContainer'>
-                <a href={socialMedia.instagram} target="_blank">
+                <a href={socialMedia.instagram} target="_blank" rel='noopener noreferrer'>
                     <div ref={logo1}>
                         <FontAwesomeIcon icon={['fab', 'instagram']} size='2x' textDecoration='none' color={logoColor} className='logo'/>
                     </div>
@@ -52,7 +52,7 @@ const SocialMedia = (props) => {
             </div>
 
             <div ref={e => { logoContainer2 = e }} className='logoContainer'>
-                <a href={socialMedia.twitter} target="_blank">
+                <a href={socialMedia.twitter} target="_blank" rel='noopener noreferrer'>
                     <div ref={logo2}>
                         <FontAwesomeIcon icon={['fab', 'twitter']} size='2x' textDecoration='none' color={logoColor} className='logo'/>
                     </div>
@@ -60,7 +60,7 @@ const SocialMedia = (props) => {
             </div>
 
             <div ref={e => { logoContainer3 = e }} className='logoContainer'>
-                <a href={socialMedia.facebook} target="_blank">
+                <a href={socialMedia.facebook} target="_blank" rel='noopener noreferrer'>
                     <div ref={logo3}>
                         <FontAwesomeIcon icon={['fab', 'facebook']} size='2x' textDecoration='none' color={logoColor} className='logo'/>
                     </div>

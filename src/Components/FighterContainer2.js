@@ -33,9 +33,9 @@ const FighterContainer2 = (props) => {
     let blueHeart = useRef(null)
     //useStates
     let [fighter, setFighter] = useState()
-    const [fill, setFill] = useState(false)
-    const [redHeartFill, setRedHeartFill] = useState(false)
-    const [blueHeartFill, setBlueHeartFill] = useState(false)
+    const [fill, setFill] = useState()
+    const [redHeartFill, setRedHeartFill] = useState()
+    const [blueHeartFill, setBlueHeartFill] = useState()
     const [modalIsOpen, setModalIsOpen] = useState(false)
     const [isComparisonModalOpen, setIsComparisonModalOpen] = useState(false)
     const [hover, setHover] = useState(false)
@@ -133,7 +133,7 @@ const FighterContainer2 = (props) => {
         overlay: {
             backgroundColor: 'rgba(75, 74, 76, 0.5)'
         }
-    };
+    }
     //Opens modal and sends either redFighter or blueFighter as props
     const getToModal = (e) => {
         const cn = e.currentTarget.className

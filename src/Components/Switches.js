@@ -40,12 +40,12 @@ const Switches = () => {
                         offColor='#555'
                         uncheckedIcon={
                             <div className='switchIconContainer'>
-                                <img style={{ width: '20px' }} src={darkLogo} />
+                                <img style={{ width: '20px' }} src={darkLogo} alt='darklogo'/>
                             </div>
                         }
                         checkedIcon={
                             <div className='switchIconContainer'>
-                                <img style={{ width: '20px' }} src={lightLogo} />
+                                <img style={{ width: '20px' }} src={lightLogo} alt='lightlogo'/>
                             </div>} />
                     <Switch
                         id='normal-switch'
@@ -58,11 +58,11 @@ const Switches = () => {
                         className='switch'
                         onColor='#888'
                         uncheckedIcon={
-                            <div className='switchContainer'>
+                            <div className='switchIconContainer'>
                                 <p style={{ color: 'orange' }}>CM</p>
                             </div>}
                         checkedIcon={
-                            <div className='switchContainer'>
+                            <div className='switchIconContainer'>
                                 <p>IN</p>
                             </div>} />
                 </div>

@@ -1,6 +1,7 @@
 .mainStatsDiv{
     flex-wrap: wrap;
     border: 1px solid white;
+    min-width: 745px;
     width: 105%;
     height: auto;
     justify-content: space-evenly;

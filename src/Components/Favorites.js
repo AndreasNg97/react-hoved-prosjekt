@@ -71,14 +71,13 @@ const Favorites = () => {
     }, [favorite, title])
 
     return (
-        <div>
-            <div className='flex-end'>
-                <p ref={fighterRef} style={{ fontWeight: '500' }} className='navbarBtn pointer' onClick={() => setFavorite(true)}>FIGHTERS</p>
-                <p style={{ fontWeight: '500' }}>|</p>
-                <p ref={fightRef} style={{ fontWeight: '500' }} className='navbarBtn pointer' onClick={() => setFavorite(false)}>FIGHTS</p>
-            </div>
+        <div >
             <div>
-                <h1>{title}</h1>
+                <div style={{ display: 'flex', marginLeft: '7rem' }}>
+                    <p ref={fighterRef} style={{ fontWeight: '500' }} className='navbarBtn pointer' onClick={() => setFavorite(true)}>FIGHTERS</p>
+                    <p style={{ fontWeight: '500' }}>|</p>
+                    <p ref={fightRef} style={{ fontWeight: '500' }} className='navbarBtn pointer' onClick={() => setFavorite(false)}>FIGHTS</p>
+                </div>
                 {favorite === false &&
                     fights2watch.map(fight =>
                         <FighterContainer2
