@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-hoved-prosjekt/static/css/main.0a981dfd.chunk.css",
+    "main.js": "/react-hoved-prosjekt/static/js/main.dfbb184d.chunk.js",
+    "main.js.map": "/react-hoved-prosjekt/static/js/main.dfbb184d.chunk.js.map",
+    "runtime-main.js": "/react-hoved-prosjekt/static/js/runtime-main.528b036d.js",
+    "runtime-main.js.map": "/react-hoved-prosjekt/static/js/runtime-main.528b036d.js.map",
+    "static/js/2.40a3b6f8.chunk.js": "/react-hoved-prosjekt/static/js/2.40a3b6f8.chunk.js",
+    "static/js/2.40a3b6f8.chunk.js.map": "/react-hoved-prosjekt/static/js/2.40a3b6f8.chunk.js.map",
+    "index.html": "/react-hoved-prosjekt/index.html",
+    "precache-manifest.5170fc5c82a25b2cbefd21e6f6574cc5.js": "/react-hoved-prosjekt/precache-manifest.5170fc5c82a25b2cbefd21e6f6574cc5.js",
+    "service-worker.js": "/react-hoved-prosjekt/service-worker.js",
+    "static/css/main.0a981dfd.chunk.css.map": "/react-hoved-prosjekt/static/css/main.0a981dfd.chunk.css.map",
+    "static/js/2.40a3b6f8.chunk.js.LICENSE.txt": "/react-hoved-prosjekt/static/js/2.40a3b6f8.chunk.js.LICENSE.txt",
+    "static/media/body.png": "/react-hoved-prosjekt/static/media/body.15dc4169.png",
+    "static/media/Landing.css": "/react-hoved-prosjekt/static/media/poster.3070066a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.528b036d.js",
+    "static/js/2.40a3b6f8.chunk.js",
+    "static/css/main.0a981dfd.chunk.css",
+    "static/js/main.dfbb184d.chunk.js"
+  ]
+}
